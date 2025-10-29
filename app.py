@@ -167,7 +167,7 @@ def decode_protobuf(binary):
         print(f"Error decoding Protobuf data: {e}")
         return None
 
-@app.route('/like', methods=['GET'])
+@app.route('/', methods=['GET'])
 def handle_requests():
     uid = request.args.get("uid")
     server_name = request.args.get("server_name", "").upper()

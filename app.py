@@ -231,9 +231,9 @@ def handle_requests():
         remains = KEY_LIMIT - count
 
         result = {
-            "LikesGivenByAPI": like_given,
-            "LikesafterCommand": after_like,
-            "LikesbeforeCommand": before_like,
+            "Lɪᴋᴇs Aᴅᴅᴇᴅ": like_given,
+            "Cᴜʀʀᴇɴᴛ Lɪᴋᴇs": after_like,
+            "Pʀᴇᴠɪᴏᴜs Lɪᴋᴇs": before_like,
             "PlayerNickname": name,
             "UID": id,
             "status": status,

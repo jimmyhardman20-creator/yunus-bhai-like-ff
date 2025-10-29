@@ -222,7 +222,7 @@ def handle_requests():
         name = str(data['AccountInfo']['PlayerNickname'])
 
         like_given = after_like - before_like
-        status = Cᴏᴍᴘʟᴇᴛᴇᴅ if like_given != 0 else Cancelled
+        status = 1 if like_given != 0 else 2
 
         if like_given > 0:
             token_tracker[token][0] += 1

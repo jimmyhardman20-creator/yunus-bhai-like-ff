@@ -170,7 +170,7 @@ def decode_protobuf(binary):
 @app.route('/', methods=['GET'])
 def handle_requests():
     uid = request.args.get("uid")
-    server_name = request.args.get("server_name", "").upper()
+    server_name = request.args.get("region", "").upper()
     key = request.args.get("key")
 
     if key != "gst":
